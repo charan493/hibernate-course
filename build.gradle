@@ -1,0 +1,22 @@
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
+    repositories {
+       mavenCentral()
+    }
+
+    dependencies {
+	compile 'org.hibernate:hibernate-core:4.3.6.Final'
+	compile 'org.slf4j:slf4j-api:1.7.7'
+	compile 'org.slf4j:slf4j-log4j12:1.7.7'
+	compile 'mysql:mysql-connector-java:5.1.33'
+        testCompile 'junit:junit:4.11'
+    }
+
+    /*version = '1.0'
+
+    jar {
+        manifest.attributes provider: 'gradle'
+    }*/
+}
